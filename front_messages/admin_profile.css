@@ -1,0 +1,148 @@
+.apro-content {
+    width: 70%;
+    margin: auto;
+    justify-content: center;
+    font-family: Nunito;
+    font-size: 14px;
+    color: #000;
+    padding: 5px;
+    margin-top: 5vh;
+}
+
+.apro-content table td {
+    max-width: 50px;
+    min-width: 30px;
+    font-family: Nunito;
+    font-size: 18px;
+    font-weight: 200;
+    color: #bbb;
+    padding: 20px 0;
+}
+
+.apro-content table th {
+    max-width: 50px;
+    font-family: Nunito;
+    font-size: 28px;
+    color: #ddd;
+    font-weight: 400;
+}
+
+.apro-content table {
+    text-align: center;
+    background-color: #353e45;
+}
+
+.apro-content table td,
+.apro-content table th {
+    border: none;
+    border-bottom: 2px solid #555;
+    vertical-align: middle;
+}
+
+.apro-admin-add-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #5a5a5a;
+    padding-top: 10px;
+    text-align: center;
+    color: #eec680;
+    font-size: 20px;
+    font-weight: 500;
+    position: fixed;
+    bottom: 6vh;
+    right: 10vh;
+    transition-duration: 0.3s;
+}
+
+.apro-admin-add-icon:hover {
+    box-shadow: 0px 0px 3px 3px #888888;
+    transform: scale(1.1);
+}
+
+.apro-edit-icon {
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    background-color: #eec680;
+    border-radius: 50%;
+    padding-top: 7px;
+    color: #404040;
+    transition-duration: 0.3s;
+    text-align: center;
+}
+
+.apro-edit-icon:hover {
+    transform: scale(1.13);
+}
+
+.apro-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #777777;
+    left: -40px;
+    top: 40px;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    z-index: 1;
+   
+}
+
+.apro-dropdown-content a {
+    color: #ccc;
+    font-family: Nunito;
+    padding: 8px 10px;
+    text-decoration: none;
+    display: block;
+    border-radius: 10px;
+}
+
+
+.apro-dropdown-content a:hover {
+    background-color: #5a5a5a;
+}
+
+.apro-dropdown:hover .apro-dropdown-content {
+    display: block;
+}
+
+
+
+.apro-edit-icon:hover .apro-dropdown-menu {
+    display: block;
+}
+
+@media (max-width: 576px) {
+    .apro-content {
+        width: 100%;
+    }
+    .apro-content table td {
+        font-size: 14px;
+        padding: 12px 0;
+    }
+    .apro-content table th {
+        font-size: 18px;
+        font-weight: 200;
+        padding: 5px 0;
+        min-width: 60px;
+    }
+    .apro-admin-add-icon {
+        bottom: 6vh;
+        right: 6vh;
+    }
+    .apro-edit-icon {
+        width: 30px;
+        height: 30px;
+        padding-top: 5px;
+    }
+    .apro-dropdown-content {
+        position: absolute;
+        left: -35px;
+        top: 32px;
+        min-width: 100px;
+    }
+    .apro-dropdown-content a {
+        padding: 5px 10px;
+    }
+}

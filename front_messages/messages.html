@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Righteous&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito" />
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="header-admin-info">
+            <div class="header-admin-dropdown">
+                <div onclick="handleHeaderAdmin()" id="headerAdminBtn" class="header-admin-dropbtn">
+                </div>
+                <div class="header-admin-name"> Admin Name</div>
+                <div id="headerAdminDropdown" class="header-admin-dropdown-content">
+                    <div class="header-admin-item">
+                        <img src="./assets/images/girl3.jpg" alt="User Image" class="user-list-img">
+                        <span>Admin Profile 1</span>
+                    </div>
+                    <div class="header-admin-item">
+                        <img src="./assets/images/girl3.jpg" alt="User Image" class="user-list-img">
+                        <span>Admin Profile 2</span>
+                    </div>
+                    <div class="header-admin-item">
+                        <img src="./assets/images/girl3.jpg" alt="User Image" class="user-list-img">
+                        <span>Admin Profile 3</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="rihgt-nav-dropdown">
+            <div onclick="handleRightNav()" id="rightNavBtn" class="right-nav-dropbtn">
+            </div>
+            <div id="rightNavDropdown" class="right-nav-content">
+                <div class="dropdown-right-nav">
+                    <a href="buy_credits.html" class="link">
+                        <div class="right-nav-item"><i class="fa fa-search"></i></div>
+                    </a>
+                    <a href="edit_profile.html" class="link">
+                        <div class="right-nav-item"><i class="fa fa-heart"></i></div>
+                    </a>
+                    <a href="all_users.html" class="link">
+                        <div class="right-nav-item"><i class="fa fa-user"></i></div>
+                    </a>
+                    <a href="messages.html" class="link">
+                        <div class="right-nav-item"><i class="fa fa-comment-dots"></i></div>
+                    </a>
+                    <a href="statistics.html" class="link">
+                        <div class="right-nav-item"><i class="fa fa-chart-bar"></i></div>
+                    </a>
+                    <a href="admin_profile.html" class="link">
+                        <div class="right-nav-item"><i class="fa fa-id-card"></i></div>
+                    </a>
+                    <a href="#">
+                        <div class="right-nav-item settings"><i class="fa fa-cog"></i></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="header-user-list-dropdown">
+            <div onclick="handleUserList()" id="userListBtn" class="header-user-list-dropbtn">
+            </div>
+            <div id="userListDropdown" class="user-list-content">
+                <div class="user-list">
+                    <img src="./assets/images/girl2.png" alt="User Image" class="user-list-img">
+                    <span>User Name, </span>
+                    <span> 50, </span>
+                    <i class="fa fa-user"></i>
+                    <div class="user-list-dropdown">
+                        <span class="user-list-dropbtn"><i class="fa fa-ellipsis-v"></i></span>
+                        <div class="user-list-dropdown-content">
+                            <div class="user-list-visit"><i class="far fa-user"></i>Visit</div>
+                            <div class="user-list-close"><i class="far fa-times-circle"></i>Close</div>
+                            <div class="user-list-block"><i class="fa fa-exclamation-circle"></i>Block
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="user-list">
+                    <img src="./assets/images/girl2.png" alt="User Image" class="user-list-img">
+                    <span>User Name, </span>
+                    <span> 50, </span>
+                    <i class="fa fa-user"></i>
+                    <div class="user-list-dropdown">
+                        <span class="user-list-dropbtn"><i class="fa fa-ellipsis-v"></i></span>
+                        <div class="user-list-dropdown-content">
+                            <div class="user-list-visit"><i class="far fa-user"></i>Visit</div>
+                            <div class="user-list-close"><i class="far fa-times-circle"></i>Close</div>
+                            <div class="user-list-block"><i class="fa fa-exclamation-circle"></i>Block
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="user-list">
+                    <img src="./assets/images/girl2.png" alt="User Image" class="user-list-img">
+                    <span>User Name, </span>
+                    <span> 50, </span>
+                    <i class="fa fa-user"></i>
+                    <div class="user-list-dropdown">
+                        <span class="user-list-dropbtn"><i class="fa fa-ellipsis-v"></i></span>
+                        <div class="user-list-dropdown-content">
+                            <div class="user-list-visit"><i class="far fa-user"></i>Visit</div>
+                            <div class="user-list-close"><i class="far fa-times-circle"></i>Close</div>
+                            <div class="user-list-block"><i class="fa fa-exclamation-circle"></i>Block
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="user-profile-dropdown">
+            <div onclick="handleUserProfile()" id="rightNavBtn" class="user-profile-dropbtn">
+            </div>
+            <div id="userProfileDropdown" class="user-profile-content">
+                <div class="user-profile">
+                    <img src="./assets/images/girl2.png" alt="User Image" class="user-img">
+                    <span>User Name, </span>
+                    <span> 50, </span>
+                    <i class="fa fa-user"></i>
+                    <p>User Profile Notes</p>
+                    <div class="profile-note">
+                        Lorem ipsum dolor sitVestibulum tellus egeLorem ipsum dolor
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="right-nav">
+        <nav class="">
+            <a href="buy_credits.html" class="link"><i class="fa fa-search"></i></a>
+            <a href="edit_profile.html" class="link"><i class="fa fa-heart"></i></a>
+            <a href="all_users.html" class="link"><i class="fa fa-user"></i></a>
+            <a href="messages.html" class="link"><i class="fa fa-comment-dots"></i></a>
+            <a href="statistics.html" class="link"><i class="fa fa-chart-bar"></i></a>
+            <a href="admin_profile.html" class="link"><i class="fa fa-id-card"></i></a>
+            <a href="#" class="settings"><i class="fa fa-cog"></i></a>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="message-contents">
+                <div class="conversation-notes">
+                    <p>Conversation Notes</p>
+                    <div class="conversation-content">
+                        Empty
+                    </div>
+                </div>
+                <div class="chat-box ">
+                    <div class="message-user">
+                        <img src="./assets/images/girl2.png" alt="" class="message-user-img">
+                        <div class="message-user-content">
+                            <div class="content-text">
+                                This is the sample message of user. This is the sample message of user. This is the
+                                sample message of user. This is the sample message of user
+                            </div>
+                            <div class="right date-color">
+                                06.02 23:34
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="message-admin right">
+                        <div class="message-admin-content left">
+                            <div class="content-text">
+                                This is the sample message of admin. This is the sample message of admin. This is the
+                                sample message of admin
+                            </div>
+
+                            <div class=" date-color">
+                                06.02 23:34
+                            </div>
+
+                        </div>
+                        <img src="./assets/images/girl3.jpg" alt="" class="message-admin-img">
+                    </div>
+                    <div class="message-user">
+                        <img src="./assets/images/girl2.png" alt="" class="message-user-img">
+                        <div class="message-user-content">
+                            Hello. How are you?
+                            <div class="right date-color">
+                                06.02 23:34
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message-admin right">
+                        <div class="message-admin-content left">
+                            Fine. And you?
+                            <div class=" date-color">
+                                06.02 23:34
+                            </div>
+
+                        </div>
+                        <img src="./assets/images/girl3.jpg" alt="" class="message-admin-img">
+                    </div>
+                    <div class="message-user">
+                        <img src="./assets/images/girl2.png" alt="" class="message-user-img">
+                        <div class="message-user-content">
+                            Me too.
+                            <div class="right date-color">
+                                06.02 23:34
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="message-admin right">
+                        <div class="message-admin-content left">
+                            Hey, Why don't you come to my home?
+                            <div class=" date-color">
+                                06.02 23:34
+                            </div>
+                        </div>
+                        <img src="./assets/images/girl3.jpg" alt="" class="message-admin-img">
+                    </div>
+                </div>
+                <div class="send-message">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="message" aria-label="Recipient's username"
+                            aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <a href="messages.html" class="link"><i class="fa fa-paper-plane"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="user-info">
+                <div class="navbar-expand-lg">
+
+                    <div class="collapse navbar-collapse" id="navbarText">
+                        <ul class="navbar-nav mr-auto flex-column">
+                            <li class="align-center ">
+                                All Users Chat
+                            </li>
+                            <li class="nav-item ">
+                                <div class="user-profile">
+                                    <img src="./assets/images/girl2.png" alt="User Image" class="user-img">
+                                    <span>User Name, </span>
+                                    <span> 50, </span>
+                                    <i class="fa fa-user"></i>
+                                    <p>User Profile Notes</p>
+                                    <div class="profile-note">
+                                        Lorem ipsum dolor sitVestibulum tellus egeLorem ipsum dolor
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="user-list">
+                                    <img src="./assets/images/girl1.png" alt="User Image" class="user-list-img">
+                                    <span>User Name, </span>
+                                    <span> 50, </span>
+                                    <i class="fa fa-user"></i>
+                                    <div class="user-list-dropdown">
+                                        <span class="user-list-dropbtn"><i class="fa fa-ellipsis-v"></i></span>
+                                        <div class="user-list-dropdown-content">
+                                            <div class="user-list-visit"><i class="far fa-user"></i>Visit</div>
+                                            <div class="user-list-close"><i class="far fa-times-circle"></i>Close</div>
+                                            <div class="user-list-block"><i class="fa fa-exclamation-circle"></i>Block
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item active">
+                                <div class="user-list">
+                                    <img src="./assets/images/girl2.png" alt="User Image" class="user-list-img">
+                                    <span>User Name, </span>
+                                    <span> 50, </span>
+                                    <i class="fa fa-user"></i>
+                                    <div class="user-list-dropdown">
+                                        <span class="user-list-dropbtn"><i class="fa fa-ellipsis-v"></i></span>
+                                        <div class="user-list-dropdown-content">
+                                            <div class="user-list-visit"><i class="far fa-user"></i>Visit</div>
+                                            <div class="user-list-close"><i class="far fa-times-circle"></i>Close</div>
+                                            <div class="user-list-block"><i class="fa fa-exclamation-circle"></i>Block
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="user-list">
+                                    <img src="./assets/images/girl1.png" alt="User Image" class="user-list-img">
+                                    <span>User Name, </span>
+                                    <span> 50, </span>
+                                    <i class="fa fa-user"></i>
+                                    <div class="user-list-dropdown">
+                                        <span class="user-list-dropbtn"><i class="fa fa-ellipsis-v"></i></span>
+                                        <div class="user-list-dropdown-content">
+                                            <div class="user-list-visit"><i class="far fa-user"></i>Visit</div>
+                                            <div class="user-list-close"><i class="far fa-times-circle"></i>Close</div>
+                                            <div class="user-list-block"><i class="fa fa-exclamation-circle"></i>Block
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="user-list">
+                                    <img src="./assets/images/girl3.jpg" alt="User Image" class="user-list-img">
+                                    <span>User Name, </span>
+                                    <span> 50, </span>
+                                    <i class="fa fa-user"></i>
+
+                                    <div class="user-list-dropdown">
+                                        <span class="user-list-dropbtn"><i class="fa fa-ellipsis-v"></i></span>
+                                        <div class="user-list-dropdown-content">
+                                            <div class="user-list-visit"><i class="far fa-user"></i>Visit</div>
+                                            <div class="user-list-close"><i class="far fa-times-circle"></i>Close</div>
+                                            <div class="user-list-block"><i class="fa fa-exclamation-circle"></i>Block
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ############ Java Scripts ############     -->
+
+    <script>
+
+        function handleHeaderAdmin() {
+            document.getElementById("headerAdminDropdown").classList.toggle("show");
+        }
+        function handleRightNav() {
+            document.getElementById("rightNavDropdown").classList.toggle("show");
+        }
+        function handleUserList() {
+            document.getElementById("userListDropdown").classList.toggle("show");
+        }
+        function handleUserProfile() {
+            document.getElementById("userProfileDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.header-admin-dropbtn')) {
+                var dropdowns = document.getElementsByClassName("header-admin-dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+            if (!event.target.matches('.right-nav-dropbtn')) {
+                var dropdowns = document.getElementsByClassName("right-nav-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+            if (!event.target.matches('.header-user-list-dropbtn')) {
+                var dropdowns = document.getElementsByClassName("user-list-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+            if (!event.target.matches('.user-profile-dropbtn')) {
+                var dropdowns = document.getElementsByClassName("user-profile-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./assets/fontawesome/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <!-- <script src="./action.js"></script> -->
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+.stc-select-month {
+    width: 200px;
+    margin: 10px 0 40px 0px;
+    margin-right: 5%;
+    background-color: #aaa;
+    display: inline-block;
+    border-radius: 15px;
+    transition-duration: 0.3s;
+    padding: 8px;
+    outline: none;
+    border: none;
+    color: #333;
+    font-family: Nunito;
+}
+
+.stc-select-month:hover,
+.stc-select-admin:hover {
+    box-shadow: 1px 1px 4px 2px #888888;
+}
+
+.stc-select-admin {
+    width: 120px;
+    margin: 10px 0 40px 0px;
+    margin-right: 5%;
+    background-color: #aaa;
+    display: inline-block;
+    border-radius: 15px;
+    transition-duration: 0.3s;
+    padding: 8px;
+    outline: none;
+    border: none;
+    color: #333;
+    font-family: Nunito;
+}
+
+.statistics-content {
+    width: 70%;
+    margin: auto;
+    justify-content: center;
+    font-family: Nunito;
+    font-size: 14px;
+    color: #000;
+    padding: 5px;
+}
+
+.statistics-content table td {
+    max-width: 60px;
+    font-family: Nunito;
+    font-size: 28px;
+    color: #ddd;
+    padding: 20px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-lines: 2;
+}
+
+.statistics-content table th {
+    max-width: 60px;
+    font-family: Nunito;
+    font-size: 22px;
+    font-weight: 500;
+    color: #bbb;
+    vertical-align: middle;
+}
+
+.statistics-content table {
+    text-align: center;
+    background-color: #353e45;
+}
+
+.statistics-content table td,
+.statistics-content table th {
+    border: none;
+    border-bottom: 1px solid #555;
+}
+
+.statistics-content table thead th {
+    border-bottom: 3px solid #555;
+}
+
+.stc-admin-add-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #5a5a5a;
+    padding-top: 10px;
+    text-align: center;
+    color: #eec680;
+    font-size: 20px;
+    font-weight: 500;
+    position: fixed;
+    bottom: 6vh;
+    right: 10vh;
+    transition-duration: 0.3s;
+}
+
+.stc-admin-add-icon:hover {
+    box-shadow: 0px 0px 3px 3px #888888;
+    transform: scale(1.1);
+}
+
+.stc-admin-add-icon .stc-tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #aaa;
+    color: #333;
+    text-align: center;
+    border-radius: 15px;
+    padding: 3px 10px;
+    font-family: Nunito;
+    /* Position the tooltip */
+    position: absolute;
+    left: -200px;
+    top: -28px;
+    z-index: 1;
+}
+
+.stc-admin-add-icon:hover .stc-tooltiptext {
+    visibility: visible;
+}
+
+@media (max-width: 576px) {
+    .statistics-content {
+        width: 100%;
+    }
+    .statistics-content table td {
+        font-size: 16px;
+        padding: 20px 0;
+    }
+    .statistics-content table th {
+        font-size: 12px;
+        font-weight: 500;
+        vertical-align: middle;
+        padding: 5px 0;
+        min-width: 45px;
+    }
+    .stc-select-month {
+        width: 160px;
+        margin-bottom: 20px;
+        margin-right: 3%;
+    }
+    .stc-admin-add-icon {
+        bottom: 6vh;
+        right: 6vh;
+    }
+}
